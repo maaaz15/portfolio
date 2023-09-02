@@ -1,0 +1,91 @@
+    /* body {
+        background: linear-gradient(to right, #ad5389, #3c1053); 
+    } */
+  .body-home {
+    background-image: url(
+      https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611d76ac3df9ea13a1a88c11_new-home-tab-stars-up.svg), url(
+      https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611e98699f07d9d298fccac5_glow_newhome.svg
+    );
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100%;
+    background-color: #222236;
+  }
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 2rem 0;
+  }
+
+  .neumorphism {
+    background-color: #e5e5e5;
+    opacity: 70%;
+    box-shadow: 1px 1px 3px rgba(180, 180, 180, 0.5),
+                -1px -1px 3px rgba(255, 255, 255, 0.5);
+  }
+
+  .neumorphism:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 2px 2px 5px rgba(180, 180, 180, 0.5),
+                -2px -2px 5px rgba(255, 255, 255, 0.5);
+  }
+
+  
+  /* Responsive section styles */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .neumorphism {
+      width: 80%; /* Adjust the width as needed */
+      max-width: 300px; /* Adjust the maximum width as needed */
+      height: auto; /* Allow the height to adjust based on content */
+      margin: 0 auto; /* Center the card horizontally */
+    }
+    .hero{
+      width: 100%;
+      max-width: 300px; /* Adjust the maximum width as needed */
+      /* height: auto; Allow the height to adjust based on content */
+      margin: 0 auto; /* Center the card horizontally */
+      font-size: 1.125rem;
+    }
+    .title{
+      font-size: 2rem;
+    }
+    .desc{
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  /* }
+
+    /* Show mobile menu and hide desktop links on small screens 
+    @media (max-width: 768px) { */
+      #mobile-menu-dropdown {
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+      }
+  
+      #mobile-menu-button.active + #mobile-menu-dropdown {
+        transform: scaleY(1);
+      }
+  
+      .md:flex {
+        display: none;
+      }
+  
+      .md:hidden {
+        display: flex;
+      }
+    }
+  
+   /* Scroll to top button styles */
+   #scrollToTopButton:hover {
+    background-color: #333;
+  }

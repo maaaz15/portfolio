@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+  <title>MAAZ ZAMA</title>
+</head>
+<body class="body-home">
+  <!-- Navigation Bar -->
+  <nav class="p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-lg font-bold">maaz.dev</a>
+
+      <!-- For Mobile Screens -->
+      <div class="md:hidden relative">
+        <button id="mobile-menu-button" class="text-white">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="mobile-menu-dropdown" class="hidden absolute right-0 top-12 mt-2 bg-white rounded-md shadow-lg">
+          <ul class="py-2">
+            <li><a href="#about" class="block px-4 py-2 font-semibold text-gray-800 hover:bg-gray-200">About</a></li>
+            <li><a href="#skills" class="block px-4 py-2 font-semibold text-gray-800 hover:bg-gray-200">Skills</a></li>
+            <li><a href="#projects" class="block px-4 py-2 font-semibold text-gray-800 hover:bg-gray-200">Projects</a></li>
+            <li><a href="#contact" class="block px-4 py-2 font-semibold text-gray-800 hover:bg-gray-200">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Desktop navigation links -->
+      <div class="hidden md:flex space-x-4">
+        <ul class="flex space-x-4">
+          <li><a href="#about" class="text-white font-semibold px-2 hover:text-red-200 hover:underline">About</a></li>
+          <li><a href="#skills" class="text-white font-semibold px-2 hover:text-red-200 hover:underline">Skills</a></li>
+          <li><a href="#projects" class="text-white font-semibold px-2 hover:text-red-200 hover:underline">Projects</a></li>
+          <li><a href="#contact" class="text-white font-semibold px-2 hover:text-red-200 hover:underline">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Main Comp -->
+
+ <section class="py-36">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="md:col-span-1 flex items-center justify-center">
+          <img src="assets/avatar.png" alt="Your Avatar" class="rounded-full w-80 h-96 mx-auto mb-4">
+        </div>
+        <div class="pl-4 pr-4 hero md:col-span-1">
+          <h1 class="text-5xl title text-gray-200 font-black mb-4">Hi, I'm Maaz!</h1>
+          <p class="text-lg desc text-gray-300 mt-12 mb-6">Frontend Web Developer passionate about creating user-friendly and visually appealing websites. I specialize in HTML, CSS, and JavaScript, with a love for modern design trends and clean code.</p>
+          <p class="text-lg desc text-gray-300 mt-6 mb-6">My goal is to create meaningful and impactful web experiences for users.</p>
+          <p class="text-lg desc text-gray-300 mt-6">When I'm not coding, you can find me exploring the latest design trends, enjoying a cup of tea, or taking nature walks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Skills -->
+
+<section id="skills" class="pb-36">
+  <div class="container mx-auto">
+    <h2 class="text-gray-200 section-title">Skills</h2>
+    <div class="grid pt-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+      <!-- Web Development Skills -->
+      <div class="neumorphism p-10 rounded-3xl shadow">
+        <img src="assets/code.png" alt="Code" class="w-12 h-12">
+        <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+        <ul class="list-disc pl-6">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Tailwind CSS</li>
+        </ul>
+      </div>
+
+      <!-- UI/UX Design Skill -->
+      <div class="neumorphism p-10 rounded-3xl shadow">
+        <img src="assets/ux.png" alt="UIUX" class="w-10 h-10">
+        <h3 class="text-2xl font-bold mb-2">UI/UX Design</h3>
+        <p class="text-gray-700">Creating visually appealing and user-friendly designs.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
+      <!-- Other Programming Languages -->
+      <div class="neumorphism p-10 rounded-3xl shadow">
+        <img src="assets/programming.png" alt="Programming" class="w-8 h-8">
+        <h3 class="text-2xl font-bold mb-2">Other Languages</h3>
+        <ul class="list-disc pl-6">
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+        </ul>
+      </div>
+      
+      <!-- Additional skills -->
+      <div class="neumorphism p-10 rounded-3xl shadow">
+        <img src="assets/additional.png" alt="Additional" class="w-10 h-10">
+        <h3 class="text-2xl font-bold mb-2">Additional Skills</h3>
+        <ul class="list-disc pl-6">
+          <li>Responsive Design</li>
+          <li>Version Control (Git)</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+
+      <!-- Add more skills as needed -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects Comp -->
+
+  <section id="projects" class="pb-36">
+    <div class="container mx-auto">
+      <h2 class="text-gray-200 section-title">My Projects</h2>
+      <div class="grid pt-14 grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- project card -->
+        <div class="neumorphism p-10 rounded-3xl shadow">
+            <h3 class="text-2xl font-semibold mb-2">Temperature Converter</h3>
+          <p class="text-gray-700 mb-4">Temperature Converter built using HTML, CSS, and JavaScript. It allows users to convert temperatures between different units, such as Celsius, and Fahrenheit.</p>
+          <button class="text-white bg-blue-500 p-2 px-8 rounded-3xl hover:bg-black  hover:drop-shadow-2xl hover:scale-125 shadow" onclick="window.location.href = 'https://tempconv.vercel.app/';">View</button>
+        </div>
+
+        <div class="neumorphism p-10 rounded-3xl drop-shadow-2xl">
+            <h3 class="text-2xl font-semibold mb-2">Clock</h3>
+          <p class="text-gray-700 mb-4">A digital clock built using HTML, CSS, and JavaScript.</p>
+          <button class="text-white bg-blue-500 p-2 px-8 rounded-3xl hover:bg-black  hover:drop-shadow-2xl hover:scale-125 shadow" onclick="window.location.href = 'https://clock-digit.vercel.app/';">View</button>
+        </div>
+
+        <div class="neumorphism p-10 rounded-3xl shadow">
+            <h3 class="text-2xl font-semibold mb-2">Stopwatch</h3>
+          <p class="text-gray-700 mb-4">A simple Stopwatch built using HTML, CSS, and Vanilla JavaScript. It supports actions such as Start, Resume, Pause and Reset.</p>
+          <button class="text-white bg-blue-500 p-2 px-8 rounded-3xl hover:bg-black  hover:drop-shadow-2xl hover:scale-125 shadow" onclick="window.location.href = 'https://stopwatch-simple.vercel.app/';">View</button>
+        </div>
+        <!-- more project cards here -->
+      </div>
+    </div>
+  </section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="pt-14 pb-48">
+  <div class="container mx-auto text-center">
+    <h2 class="text-gray-200 section-title">Contact</h2>
+    <div class="flex pt-14 justify-center items-center gap-8">
+      <!-- GitHub Icon -->
+      <a href="https://github.com/maaaz15" class="p-2 rounded-full hover:bg-gray-800">
+        <img src="assets/github.png" alt="GitHub" class="w-12 h-12">
+      </a>
+      <!-- Twitter Icon -->
+      <a href="https://twitter.com/informalmaaz" class="p-2 rounded-full hover:bg-gray-800">
+        <img src="assets/twitter.png" alt="Twitter" class="w-12 h-12">
+      </a>
+      <!-- LinkedIn Icon -->
+      <a href="https://linkedin.com/in/maaaz15" class="p-2 rounded-full hover:bg-gray-800">
+        <img src="assets/linkedin.png" alt="LinkedIn" class="w-12 h-12">
+      </a>
+    </div>
+    <!-- Email -->
+    <div class=" text-white mt-8 pt-14 inline-block">
+      <p>Best way to reach me is by email at <a href="mailto:maaz.zama15@gmail.com" class="font-bold hover:underline">maaz.zama15@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="text-white font-semibold py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 MAAZ ZAMA. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="#" class="text-white hover:text-blue-500 hover:underline mx-2">Privacy Policy</a>
+        <a href="#" class="text-white hover:text-blue-500 hover:underline mx-2">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="scrollToTopButton" class="fixed bottom-4 right-4 bg-gray-800 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-md hidden">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+  </button>
+</body>
+</html>
