@@ -1,6 +1,3 @@
-    /* body {
-        background: linear-gradient(to right, #ad5389, #3c1053); 
-    } */
   .body-home {
     background-image: url(
       https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611d76ac3df9ea13a1a88c11_new-home-tab-stars-up.svg), url(
@@ -25,8 +22,8 @@
   .neumorphism {
     background-color: #e5e5e5;
     opacity: 70%;
-    box-shadow: 1px 1px 3px rgba(180, 180, 180, 0.5),
-                -1px -1px 3px rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 10px rgba(80, 80, 80, 0.8),
+                10px 10px 10px rgba(80, 80, 80, 0.8);
   }
 
   .neumorphism:hover {
@@ -43,16 +40,15 @@
     }
     
     .neumorphism {
-      width: 80%; /* Adjust the width as needed */
-      max-width: 300px; /* Adjust the maximum width as needed */
-      height: auto; /* Allow the height to adjust based on content */
-      margin: 0 auto; /* Center the card horizontally */
+      width: 80%;
+      max-width: 300px;
+      height: auto; 
+      margin: 0 auto;
     }
     .hero{
       width: 100%;
-      max-width: 300px; /* Adjust the maximum width as needed */
-      /* height: auto; Allow the height to adjust based on content */
-      margin: 0 auto; /* Center the card horizontally */
+      max-width: 300px;
+      margin: 0 auto;
       font-size: 1.125rem;
     }
     .title{
@@ -62,10 +58,6 @@
       font-size: 1.125rem;
       line-height: 1.75rem;
     }
-  /* }
-
-    /* Show mobile menu and hide desktop links on small screens 
-    @media (max-width: 768px) { */
       #mobile-menu-dropdown {
         transform: scaleY(0);
         transform-origin: top;
