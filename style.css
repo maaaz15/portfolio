@@ -1,83 +1,107 @@
-  .body-home {
-    background-image: url(
-      https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611d76ac3df9ea13a1a88c11_new-home-tab-stars-up.svg), url(
-      https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611e98699f07d9d298fccac5_glow_newhome.svg
-    );
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-  }
-  body{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    min-height: 100%;
-    background-color: #222236;
-  }
+.body-home {
+  background-image: url(
+    https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611d76ac3df9ea13a1a88c11_new-home-tab-stars-up.svg), url(
+    https://uploads-ssl.webflow.com/602d59da29b66668b8758391/611e98699f07d9d298fccac5_glow_newhome.svg
+  );
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  background-color: #222236;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.neumorphism {
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, rgba(66,60,90,0.6), rgba(66,60,90,0.6));
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: hard-light;
+  color: white
+}
+
+.btn{
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+  background-image: linear-gradient(45deg, rgba(66,60,90,0.6), rgba(66,60,90,0.6));
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: hard-light;
+}
+
+
+/* Responsive section styles */
+@media (max-width: 768px) {
   .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    padding: 2rem 0;
+    font-size: 2rem;
   }
-
   .neumorphism {
-    background-color: #e5e5e5;
-    opacity: 70%;
-    box-shadow: 10px 10px 10px rgba(80, 80, 80, 0.8),
-                10px 10px 10px rgba(80, 80, 80, 0.8);
+    width: 80%; 
+    max-width: 300px; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+  .hero{
+    width: 100%;
+    max-width: 300px; 
+    margin: 0 auto;
+    font-size: 1.125rem;
+  }
+  .title{
+    font-size: 2rem;
+  }
+  .desc{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  #mobile-menu-dropdown {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 10%), 0 10px 15px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    background-image: linear-gradient(45deg, rgba(66,60,90,0.6), rgba(66,60,90,0.6));
+    mix-blend-mode: hard-light;
+    color: white
   }
 
-  .neumorphism:hover {
-    transform: translate(5px, 5px);
-    box-shadow: 2px 2px 5px rgba(180, 180, 180, 0.5),
-                -2px -2px 5px rgba(255, 255, 255, 0.5);
+  #mobile-menu-button.active + #mobile-menu-dropdown {
+    transform: scaleY(1);
   }
 
-  
-  /* Responsive section styles */
-  @media (max-width: 768px) {
-    .section-title {
-      font-size: 2rem;
-    }
-    
-    .neumorphism {
-      width: 80%;
-      max-width: 300px;
-      height: auto; 
-      margin: 0 auto;
-    }
-    .hero{
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-      font-size: 1.125rem;
-    }
-    .title{
-      font-size: 2rem;
-    }
-    .desc{
-      font-size: 1.125rem;
-      line-height: 1.75rem;
-    }
-      #mobile-menu-dropdown {
-        transform: scaleY(0);
-        transform-origin: top;
-        transition: transform 0.3s ease-in-out;
-      }
-  
-      #mobile-menu-button.active + #mobile-menu-dropdown {
-        transform: scaleY(1);
-      }
-  
-      .md:flex {
-        display: none;
-      }
-  
-      .md:hidden {
-        display: flex;
-      }
-    }
-  
-   /* Scroll to top button styles */
-   #scrollToTopButton:hover {
-    background-color: #333;
+  .md:flex {
+    display: none;
   }
+
+  .md:hidden {
+    display: flex;
+  }
+}
+
+.skills-container{
+  padding: 0px 5px;
+}
+
+.projects-container{
+  padding: 0px 5px;
+}
+
+/* Scroll to top button styles */
+#scrollToTopButton:hover {
+background-color: #333;
+}
